@@ -1,7 +1,7 @@
 # jquery-viewable  
   
 `$('#target').viewable()`  
-`~~$('#target').viewable().height()~~`
+~~`$('#target').viewable().height()`~~
   
 A jQuery library that performs several fast checks and returns `true` or `false` if an element is viewable by the user.  
 In detail, it checks for:  
