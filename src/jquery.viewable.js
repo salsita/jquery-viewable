@@ -9,7 +9,6 @@
   // Defaults
   var element = null;
   var settings = null;
-  var debugEnabled = false;
   var defaultOptions = {
     checkOpacity: true,
     opacityMin: 0,
