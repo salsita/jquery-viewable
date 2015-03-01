@@ -1,4 +1,4 @@
-# jQuery.viewable  
+# jquery-viewable  
   
 `$('#target').viewable()`  
   
