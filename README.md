@@ -1,6 +1,7 @@
 # jquery-viewable  
   
 `$('#target').viewable()`  
+`~~$('#target').viewable().height()~~`
   
 A jQuery library that performs several fast checks and returns `true` or `false` if an element is viewable by the user.  
 In detail, it checks for:  
@@ -13,6 +14,8 @@ In detail, it checks for:
 - **TODO** if element is overlayed by another element with higher `z-index` value
 - **TODO** if element is hidden by a combination of 3D transforms
 - **TODO** if element if below a javascript-based scrollbar fold
+
+**Returns results only for the first element in query and can't be chained**
 
 ## Options
 `$('#target').viewable({  
