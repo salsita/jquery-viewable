@@ -2,13 +2,12 @@
   
 `$('#target').viewable()`  
   
-**Returns a boolean value and only for the first element found in query! NOT chainable.**  
-  
-A quick library that performs several checks and returns a `bool` if an element visible to the user:  
+A jQuery library that performs several fast checks and returns `true` or `false` if an element is viewable by the user.  
+In detail, it checks for:  
 
 - `display: none` on element and its parents
 - `visibility: hidden` on element and its parents
-- `opacity` of element and its parents (configurable minimum)
+- `opacity: 0` on element and its parents (configurable minimum)
 - if element is in viewport (configurable tolerance)
 - **TODO** if element is below page fold (reachable by scrolling)
 - **TODO** if element is overlayed by another element with higher `z-index` value
