@@ -21,7 +21,7 @@ A quick library that checks for various attributes of when an element is visible
 });`  
 
 `checkOpacity` - Controls the opacity check, default `true`.  
-`opacityMin` - Minimum opacity value for a visible element, default `0`.    
+`opacityMin` - A visible element must have opacity greater than this value, default `0`.    
 `checkParents` - Check CSS values of parent elements (stops at `body`), default `true`.  
 `checkViewport` - Checks whether a part of the element is in the visible viewport, default `true`.  
 `viewportTolerance` - Tolerance for the viewport check in pixels, default `0`.
