@@ -60,11 +60,11 @@
       var state = true;
       element.parents(':not(body, html)').each(function() {
         if (!isVisible($(this), settings.checkOpacity, settings.opacityMin)) {
-          // console.info('Parent element is not visible');
           state = false;
           return false;
         };
       });
+      // console.info('Parent element is not visible');
       if (!state) return false;
     };
 
