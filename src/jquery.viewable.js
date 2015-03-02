@@ -32,7 +32,7 @@
 
   // Is element in visible viewport?
   var isInViewport = function(el, tolerance) {
-    var rect = el.get(0).getBoundingClientRect();
+    var rect = el[0].getBoundingClientRect();
     // Using jQuery width()/height() since it factors in overlayed scrollbars
     return !(rect.bottom < 0 + tolerance ||
              rect.right < 0 + tolerance ||
