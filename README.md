@@ -1,10 +1,10 @@
 # jquery-viewable  
   
-`$('#target').viewable()` > `bool`  
-`$('.targets').viewable()` > `bool` for the **first** element found  
-~~`$('.targets').viewable().each(...)`~~ Can't be chained, doesn't return `this`  
+`$('#target').viewable()` returns `true` or `false`  
+`$('.targets').viewable()` returns `true` or `false` for the **first** element found  
+~~`$('.targets').viewable().each(...)`~~ - doesn't return `this`  
   
-Returns `true` or `false` if an element is viewable by the user based on:  
+Determines if an element is viewable by the user based on:  
 
 - `display: none` on element and its parents
 - `visibility: hidden` on element and its parents
@@ -15,7 +15,7 @@ Returns `true` or `false` if an element is viewable by the user based on:
 - **TODO** if element is hidden by a combination of 3D transforms
 - **TODO** if element if below a javascript-based scrollbar fold
 
-**Returns results only for the first element in query and can't be chained!**  Is made to be called repeate
+**Returns results only for the first element in query and can't be chained!**  
 
 ## Options
 `$('#target').viewable({  
