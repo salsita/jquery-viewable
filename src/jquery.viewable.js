@@ -9,6 +9,7 @@
   // Defaults
   var element = null;
   var settings = null;
+  var $window = $(window);
   var defaultOptions = {
     checkOpacity: true,
     opacityMin: 0,
@@ -35,8 +36,8 @@
     // Using jQuery width()/height() since it factors in overlayed scrollbars
     return !(rect.bottom < 0 + tolerance ||
              rect.right < 0 + tolerance ||
-             rect.left > $(window).width() - tolerance ||
-             rect.top > $(window).height() - tolerance);
+             rect.left > $window.width() - tolerance ||
+             rect.top > $window.height() - tolerance);
   };
 
   // Create jQuery plugin
@@ -46,7 +47,7 @@
     settings = $.extend({}, defaultOptions, options);
 
     // Reference only first element found by query
-    element = $(this.get(0));
+    element = (this.length > 1) ? this.first() : this;
 
     // Element CSS value check
     if (!isVisible(element, settings.checkOpacity, settings.opacityMin)) {
